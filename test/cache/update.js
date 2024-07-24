@@ -3,7 +3,7 @@ const path = require('path')
 
 const cache = {}
 
-const modulePath = require.resolve('@citation-js/core/lib/util/fetchFile.js')
+const modulePath = require.resolve('@afforai/citation-js-core/lib/util/fetchFile.js')
 require(modulePath)
 
 const mockModule = require.cache[modulePath]
@@ -13,7 +13,7 @@ mockModule.exports.fetchFileAsync = function ours (url, ...args) {
     .then(response => (cache[url] = response))
 }
 
-const { Cite } = require('@citation-js/core')
+const { Cite } = require('@afforai/citation-js-core')
 require('../..')
 
 require('@babel/register')

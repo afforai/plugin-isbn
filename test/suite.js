@@ -4,7 +4,7 @@ import './cache/mock'
 import '../src/'
 
 import assert from 'assert'
-import { plugins } from '@citation-js/core'
+import { plugins } from '@afforai/citation-js-core'
 import apiTests from './suite.data'
 
 describe('isbn', function () {

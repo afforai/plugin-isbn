@@ -1,5 +1,5 @@
 {
-  "name": "@citation-js/plugin-isbn",
+  "name": "@afforai/citation-js-plugin-isbn",
   "version": "0.4.0",
   "description": "Citation.js plugin to fetch ISBN metadata",
   "main": "lib/index.js",
@@ -14,9 +14,12 @@
     "version": "npm run changelog",
     "preversion": "npm run lint && npm run test"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/citation-js/plugin-isbn.git"
+    "url": "https://github.com/afforai/plugin-isbn.git"
   },
   "keywords": [
     "citation.js",
@@ -27,9 +30,9 @@
   "author": "Lars Willighagen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/citation-js/plugin-isbn/issues"
+    "url": "https://github.com/afforai/plugin-isbn/issues"
   },
-  "homepage": "https://github.com/citation-js/plugin-isbn#readme",
+  "homepage": "https://github.com/afforai/plugin-isbn#readme",
   "engines": {
     "node": ">=14"
   },
@@ -56,7 +59,7 @@
     "@babel/eslint-parser": "^7.14.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/register": "^7.0.0",
-    "@citation-js/core": "^0.6.8",
+    "@afforai/citation-js-core": "^0.7.17",
     "babel-plugin-istanbul": "^6.0.0",
     "conventional-changelog-cli": "^3.0.0",
     "mocha": "^10.2.0",
@@ -64,6 +67,6 @@
     "standard": "^17.1.0"
   },
   "peerDependencies": {
-    "@citation-js/core": ">=0.6.0"
+    "@afforai/citation-js-core": ">=0.7.0"
   }
 }

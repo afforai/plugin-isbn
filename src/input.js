@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 
 import * as google from './google-books.js'
 import * as ol from './open-library.js'

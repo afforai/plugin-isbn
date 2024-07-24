@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 import * as name from '@citation-js/name'
 import * as date from '@citation-js/date'
 

@@ -1,6 +1,6 @@
 const cache = require('./cache')
 
-const modulePath = require.resolve('@citation-js/core/lib/util/fetchFile.js')
+const modulePath = require.resolve('@afforai/citation-js-core/lib/util/fetchFile.js')
 require(modulePath)
 
 const mockModule = require.cache[modulePath]
