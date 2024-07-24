@@ -109,4 +109,13 @@ export function format (records) {
   }
 }
 
+export function check (json, isbn) {
+  const identifiers = []
+  for (const item of json.items) {
+    const itemIds = item.volumeInfo.industryIdentifiers.map(id => id.identifier)
+    identifiers.push(...itemIds)
+  }
+  return identifiers.includes(isbn)
+}
+
 export const GOOGLE_BOOKS_API_VERSION = 'v1'

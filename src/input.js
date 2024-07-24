@@ -8,7 +8,7 @@ function getUrls (isbn) {
 
   return [
     [`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`,
-      json => json.totalItems],
+      json => google.check(json, isbn)],
     [`https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&format=json&jscmd=data`,
       json => Object.keys(json).length]
   ]
