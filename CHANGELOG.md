@@ -1,4 +1,8 @@
-## 0.4.1 (2024-07-24)
+## [0.4.2](https://github.com/afforai/plugin-isbn/compare/v0.4.1...v0.4.2) (2024-07-24)
+
+
+
+## [0.4.1](https://github.com/afforai/plugin-isbn/compare/a1a38d987235c88846c29092a86426b26b4885b6...v0.4.1) (2024-07-24)
 
 
 ### Bug Fixes
