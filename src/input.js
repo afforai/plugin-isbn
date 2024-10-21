@@ -16,10 +16,12 @@ function getUrls (isbn) {
 
 function getResponse (isbn) {
   for (const [url, check] of getUrls(isbn)) {
-    const json = JSON.parse(util.fetchFile(url))
-    if (check(json)) {
-      return json
-    }
+    try {
+      const json = JSON.parse(util.fetchFile(url))
+      if (check(json)) {
+        return json
+      }
+    } catch (e) {}
   }
 
   throw new Error(`Cannot find resource for ISBN: ${isbn}`)
@@ -27,10 +29,12 @@ function getResponse (isbn) {
 
 async function getResponseAsync (isbn) {
   for (const [url, check] of getUrls(isbn)) {
-    const json = JSON.parse(await util.fetchFileAsync(url))
-    if (check(json)) {
-      return json
-    }
+    try {
+      const json = JSON.parse(await util.fetchFileAsync(url))
+      if (check(json)) {
+        return json
+      }
+    } catch (e) {}
   }
 
   throw new Error(`Cannot find resource for ISBN: ${isbn}`)
