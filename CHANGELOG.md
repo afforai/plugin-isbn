@@ -1,3 +1,12 @@
+## [0.4.3](https://github.com/afforai/plugin-isbn/compare/v0.4.2...v0.4.3) (2024-10-21)
+
+
+### Bug Fixes
+
+* allow each call to fail ([814619a](https://github.com/afforai/plugin-isbn/commit/814619a7a53796a72d72318a58a285805b5414b8))
+
+
+
 ## [0.4.2](https://github.com/afforai/plugin-isbn/compare/v0.4.1...v0.4.2) (2024-07-24)
 
 
